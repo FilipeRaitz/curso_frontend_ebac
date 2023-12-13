@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover; 
+}
+
+h2 {
+    padding-left: 1em;
+    font-size: 2em;
+}
+
+section .section-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+
+}
+
+section.sec-esportes h2, section.sec-esportes h3{
+    color: darkgreen;
+}
+
+section.sec-economia h2, section.sec-economia h3{
+    color: rgb(0, 23, 100);
+}
+
+section.sec-política h2, section.sec-política h3{
+    color: rgb(164, 9, 9);
+}
+
+section.sec-entretenimento h2, section.sec-entretenimento h3{
+    color: rgb(193, 116, 9);
+}
+
+
+article {
+    ;
+}
