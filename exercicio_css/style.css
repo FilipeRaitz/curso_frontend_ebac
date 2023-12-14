@@ -9,6 +9,33 @@ body{
     gap: 1em;
 }
 
+body > header {
+    background-color: rgb(53, 88, 162);
+    color: white;
+    padding: 2em;
+    display: flex;
+    gap: 2em;
+}
+
+nav {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+nav  ul{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    list-style: none;
+    color: white;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
 img {
     width: 300px;
     height: 200px;
@@ -44,7 +71,11 @@ section.sec-entretenimento h2, section.sec-entretenimento h3{
     color: rgb(193, 116, 9);
 }
 
+time {
+    color: rgb(120, 134, 161);
+}
 
-article {
-    ;
+article > p{
+    color: rgb(60, 64, 73);
+    padding:  0 1em 1em 0;
 }
