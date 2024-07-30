@@ -1,0 +1,24 @@
+{
+  "name": "curso_frontend_ebac",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "less": "lessc ./exercicio_less/src/styles/main.less ./exercicio_less/build/styles/main.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FilipeRaitz/curso_frontend_ebac.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FilipeRaitz/curso_frontend_ebac/issues"
+  },
+  "homepage": "https://github.com/FilipeRaitz/curso_frontend_ebac#readme",
+  "devDependencies": {
+    "less": "^4.2.0",
+    "less-watch-compiler": "^1.16.3"
+  }
+}
