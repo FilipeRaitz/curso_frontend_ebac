@@ -1,12 +1,14 @@
+@import 'variaveis.less';
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: SystemUI, sans-serif;
+    font-family: Roboto, sans-serif;
 }
 
 body {
-    background-color: #f5f6fa;
+    background-color: @cor[body-fundo];
 }
 
 li {
@@ -20,18 +22,19 @@ li {
 }
 
 header {
-    background-color: #182C61;
+    background-color: @cor[header-fundo];
     position: sticky;
     top: 0;
     left: 0;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 0;
+    }
 }
 
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px 0;
-}
 
 .menu {
     display: flex;
@@ -41,7 +44,7 @@ header .container {
         margin-left: 24px;
 
         a {
-            color: #fff;
+            color: white;
         text-decoration: none;
         }
     }
@@ -68,39 +71,38 @@ section {
 
 .product-button {
     display: block;
-    background-color: #44bd32;
-    color: #fff;
+    background-color: @cor[botao];
+    color: white;
     text-align: center;
     padding: 8px 0;
     border-radius: 8px;
     margin-top: 8px;
     text-decoration: none;
     &:hover {
-        background-color: #4cd137;
+        background-color: lighten(@cor[botao], 10%);
     }
 }
 
-.product-button:hover {
+
+@media screen {
+    @media @breakpoint-desktop{
+        .container {
+            max-width: 80%;
+        }
     
-}
-
-@media screen and (max-width: 1023px) {
-    .container {
-        max-width: 80%;
+        .products {
+            grid-template-columns: repeat(2, 48.5%);
+            column-gap: 3%;
+        }
     }
-
-    .products {
-        grid-template-columns: repeat(2, 48.5%);
-        column-gap: 3%;
+    @media @breakpoint-tablet{
+        .products {
+            display: block;
+        }
+    
+        .product-item  {
+            margin-bottom: 32px;
+        }
     }
-}
-
-@media screen and (max-width: 767px) {
-    .products {
-        display: block;
-    }
-
-    .product-item  {
-        margin-bottom: 32px;
-    }
+    
 }
