@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: @cor[body-fundo];
+    background-color: @cor-body-fundo;
 }
 
 li {
@@ -22,7 +22,7 @@ li {
 }
 
 header {
-    background-color: @cor[header-fundo];
+    background-color: @cor-header-fundo;
     position: sticky;
     top: 0;
     left: 0;
@@ -71,7 +71,7 @@ section {
 
 .product-button {
     display: block;
-    background-color: @cor[botao];
+    background-color: @cor-botao;
     color: white;
     text-align: center;
     padding: 8px 0;
@@ -79,13 +79,13 @@ section {
     margin-top: 8px;
     text-decoration: none;
     &:hover {
-        background-color: lighten(@cor[botao], 10%);
+        background-color: lighten(@cor-botao, 10%);
     }
 }
 
 
 @media screen {
-    @media @breakpoint-desktop{
+    @media (width < @breakpoints[desktop]){
         .container {
             max-width: 80%;
         }
@@ -95,7 +95,7 @@ section {
             column-gap: 3%;
         }
     }
-    @media @breakpoint-tablet{
+    @media (width < @breakpoints[tablet]){
         .products {
             display: block;
         }
